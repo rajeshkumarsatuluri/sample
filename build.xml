@@ -1,14 +1,14 @@
 <project>
 <target name="clean">
-<delete dir="sample"/>
+<delete dir="samplejava"/>
 </target>
 <target name="compile">
 <mkdir dir="classes"/>
-<javac srcdir="sample" destdir="classes"/>
+<javac srcdir="samplejava" destdir="classes"/>
 </target>
 <target name="jar">
 <mkdir dir="jar"/>
-<jar destfile="jar/sample.jar" basedir="sample/classes">
+<jar destfile="jar/sample.jar" basedir="samplejava/classes">
 <manifest>
 <attribute name="Main-Class" value="sample"/>
 </manifest>
