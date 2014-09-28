@@ -1,10 +1,10 @@
 <project>
 <target name="clean">
-<delete dir="src"/>
+<delete dir="sample"/>
 </target>
 <target name="compile">
 <mkdir dir="classes"/>
-<javac srcdir="src" destdir="classes"/>
+<javac srcdir="sample" destdir="classes"/>
 </target>
 <target name="jar">
 <mkdir dir="jar"/>
