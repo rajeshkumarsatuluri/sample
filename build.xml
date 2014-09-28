@@ -4,7 +4,7 @@
 </target>
 <target name="compile">
 <mkdir dir="classes"/>
-<javac srcdir="samplejava" destdir="classes"/>
+<javac srcdir="samplejava" destdir="${basedir}/classes"/>
 </target>
 <target name="jar">
 <mkdir dir="jar"/>
