@@ -4,11 +4,11 @@
 </target>
 <target name="compile">
 <mkdir dir="classes"/>
-<javac srcdir="samplejava" destdir="classes"/>
+<javac srcdir="samplejava" destdir="/classes"/>
 </target>
 <target name="jar">
 <mkdir dir="jar"/>
-<jar destfile="jar/sample.jar" basedir="samplejava/classes">
+<jar destfile="jar/sample.jar" basedir="classes">
 <manifest>
 <attribute name="Main-Class" value="sample"/>
 </manifest>
