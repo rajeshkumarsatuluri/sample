@@ -18,9 +18,4 @@
 <java jar="jar/sample.jar" fork="true"/>
 </target>
 <target>
-<emma enabled="true">
-     <instr instrpath="${class.dir}" destdir="${instrumented.dir}" metadatafile="${coverage.dir}/metadata.emma" merge="true">
-     </instr>
- </emma>
-</target>
 </project>
