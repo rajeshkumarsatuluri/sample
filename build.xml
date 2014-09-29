@@ -5,13 +5,13 @@
     </target>
 
     <target name="compile">
-        <mkdir dir="build/classes"/>
-        <javac srcdir="src" destdir="build/classes"/>
+        <mkdir dir="classes"/>
+        <javac srcdir="src" destdir="classes"/>
     </target>
 
     <target name="jar">
-        <mkdir dir="build/jar"/>
-        <jar destfile="build/jar/samplejava.jar" basedir="build/classes">
+        <mkdir dir="jar"/>
+        <jar destfile="jar/samplejava.jar" basedir="classes">
             <manifest>
                 <attribute name="Main-Class" value="samplejava"/>
             </manifest>
@@ -19,7 +19,7 @@
     </target>
 
     <target name="run">
-        <java jar="build/jar/samplejava.jar" fork="true"/>
+        <java jar="jar/samplejava.jar" fork="true"/>
     </target>
 
 </project>
