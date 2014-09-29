@@ -16,8 +16,5 @@
 </target>
 <target name="run">
 <java jar="jar/samplejava.jar" fork="true"/>
-<classpath>
-<path location="${jar.dir}/samplejava.jar"/>
-</classpath>
 </target>
 </project>
