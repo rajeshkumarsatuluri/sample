@@ -1,20 +1,25 @@
 <project>
-<target name="clean">
-<delete dir="samplejava"/>
-</target>
-<target name="compile">
-<mkdir dir="classes"/>
-<javac srcdir="." destdir="classes"/>
-</target>
-<target name="jar">
-<mkdir dir="jar"/>
-<jar destfile="jar/sample.jar" basedir="classes">
-<manifest>
-<attribute name="Main-Class" value="samplejava"/>
-</manifest>
-</jar>
-</target>
-<target name="run">
-<java jar="jar/samplejava.jar" fork="true"/>
-</target>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes"/>
+    </target>
+
+    <target name="jar">
+        <mkdir dir="build/jar"/>
+        <jar destfile="build/jar/samplejava.jar" basedir="build/classes">
+            <manifest>
+                <attribute name="Main-Class" value="samplejava"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run">
+        <java jar="build/jar/samplejava.jar" fork="true"/>
+    </target>
+
 </project>
