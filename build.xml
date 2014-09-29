@@ -15,6 +15,6 @@
 </jar>
 </target>
 <target name="run">
-<java jar="${base-dir}/jar/samplejava.jar" fork="true"/>
+<java jar="jar/samplejava.jar" fork="true"/>
 </target>
 </project>
