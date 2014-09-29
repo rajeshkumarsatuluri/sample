@@ -17,5 +17,4 @@
 <target name="run">
 <java jar="jar/sample.jar" fork="true"/>
 </target>
-<target>
 </project>
