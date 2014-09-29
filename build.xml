@@ -17,4 +17,9 @@
 <target name="run">
 <java jar="jar/sample.jar" fork="true"/>
 </target>
+ <emma enabled="true">
+     <instr instrpath="${class.dir}" destdir="${instrumented.dir}" metadatafile="${coverage.dir}/metadata.emma" merge="true">
+         <filter excludes="au.com.jenisys.view.*"/>
+     </instr>
+ </emma>
 </project>
